@@ -65,7 +65,7 @@
   // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
-      class: 'mobile-nav d-lg-none'
+      class: 'nav-menu d-none d-lg-block'
     });
     $('body').append($mobile_nav);
     $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
@@ -192,8 +192,4 @@
 
 })(jQuery);
 
-  // jQuery counterUp
-$('[data-toggle="counter-up"]').counterUp({
-  delay: 10,
-  time: 1000
-});
+ 
